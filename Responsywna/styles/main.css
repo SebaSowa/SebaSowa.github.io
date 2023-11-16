@@ -1,0 +1,82 @@
+html,h2,.content{
+    background-color: #5e87b8;
+    color: #313251;
+}
+h2,h3,aside,.content{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+body{
+    margin: 0;
+}
+.content{
+    font-size: large;
+}
+h2{
+    font-size: x-large;
+}
+*{
+    font-family: Helvetica;
+}
+.a_aside{
+    color: #3a3b5c;
+}
+header{
+    background-color: #5f5dbd;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.a_header{
+    color: #83cee0;
+    text-decoration: none;
+}
+/* Telefon */
+@media screen and (max-width: 767px) {
+    header{
+        width: 100%;
+        height: 45px;
+    }
+    .a_header{
+        margin-left: 25%;
+        margin-top: 8px;
+        font-size: 30px;
+    }
+    .home_text{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    header{
+        width: 100%;
+        height: 75px;
+    }
+    .a_header{
+        margin-left: 25%;
+        margin-top: 16px;
+        font-size: 35px;
+    }
+    aside{
+        width: 20%;
+        float: left;
+        font-size: large;
+    }
+}
+@media screen and (min-width: 1200px) {
+    header{
+        width: 100%;
+        height: 90px;
+    }
+    .a_header{
+        margin-left: 25%;
+        margin-top: 20px;
+        font-size: 45px;
+    }
+    aside{
+        width: 25%;
+        float: left;
+        font-size: x-large;
+    }
+}
